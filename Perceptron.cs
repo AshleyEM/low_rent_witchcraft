@@ -20,7 +20,7 @@ public class Perceptron
     private List<double[]> x = new List<double[]>(); // training inputs
     private List<double> y = new List<double>(); // training answers
 
-    private double b = 1; // not for training! for each new input
+    private double b = 1; 
     private double[] w = { 0.5, 0.5, 0.5 }; // weights
 
     // ADD x1 and x2 and y to training set
