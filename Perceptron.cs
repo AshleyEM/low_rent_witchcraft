@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-// Experimental simple binary classifier using a sigmoid activation 
-// based on my limited knowledge of machine learning
+// Simple binary classifier using a sigmoid activation 
+// Based on my limited knowledge of machine learning
 // Can only take 2 inputs
 
 //    O
