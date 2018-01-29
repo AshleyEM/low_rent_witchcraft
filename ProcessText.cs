@@ -62,16 +62,17 @@ public class ProcessText
 
 
 
-    // Remove articles, prepositions, and conjunctions 
+    // Remove articles, prepositions, and conjunctions after extracting sentences from text
+    // put result into new list of sentences 
     public static void SimplifySentences(List<string[]> sentences, List<string[]> result)
     {
        
         for (int s = 0; s < sentences.Count(); s++)
         {
             string str = "";
-            for (int w = 0; w < sentences[s].Length; w++)
+            for (int w = 0; w < sentences[s].Length; w++) // go through each word in sentence
             {
-                if (syntax[0].Contains(sentences[s][w]))
+                if (syntax[0].Contains(sentences[s][w])) // if word in wordtype list, skip index, add next word to string
                 {
                     w++;
                     str += sentences[s][w] + " ";
@@ -79,9 +80,9 @@ public class ProcessText
                 else if (syntax[2].Contains(sentences[s][w])) 
                 {
                     w++;
-                    if (syntax[2].Contains(sentences[s][w]))
-                    {
-                        w++;
+                    if (syntax[2].Contains(sentences[s][w]))  // nested 'if' in case wordtype appears twice
+                    {                                         // e.g. "in of"      
+                        w++;                                
                         str += sentences[s][w] + " ";
                     }
                     else
