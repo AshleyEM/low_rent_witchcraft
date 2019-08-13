@@ -1,2 +1,2 @@
 # low_rent_witchcraft
-various experimental scripts
+Cthulhu R'lyeh wgah'nagl fhtagn!
