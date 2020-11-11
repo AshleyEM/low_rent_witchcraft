@@ -13,4 +13,4 @@ Uses the Pillow Python library.
 
 **detect_edge(image file, threshold)**: create sketchy outlines based on the contrast between pixels
 
-EXAMPLE: detect_edge(Image.open('mcr_lead_singer.png'), 40)
+EXAMPLE: `detect_edge(Image.open('mcr_lead_singer.png'), 40)`
