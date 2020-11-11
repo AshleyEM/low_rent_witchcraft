@@ -12,3 +12,5 @@ Uses the Pillow Python library.
 **posterize(image file, threshold)**: reduce the brightness levels down to 2 values (black and white)
 
 **detect_edge(image file, threshold)**: create sketchy outlines based on the contrast between pixels
+
+EXAMPLE: detect_edge(Image.open('mcr_lead_singer.png'), 40)
