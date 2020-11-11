@@ -27,5 +27,5 @@ def detect_edges(img, threshold):
     new_img.show()
 
 
-posterize(Image.open('yourImage.png'), 350)
-detect_edges(Image.open('yourImage.png'), 20)
+posterize(Image.open('emo_spiderman.png'), 350)
+detect_edges(Image.open('mcr_lead_singer.png'), 20)
