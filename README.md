@@ -1,7 +1,16 @@
-# Low Rent Witchcraft
+# BLENDER 3D TOOLS
 
-Python scripts I made in my shed.
+An assortment of convenience tools for Blender 3D.
 
+## just_detatch.py
+
+Completely detatches a mesh from an armature without having to clear the parent, clear vertex groups, and then delete the armature modifier manually.
+
+More tools on the way...
+
+
+
+# MISC
 
 ## Edgy Pixels (edgy_pixels.py)
 ![](edgypixels.png)
@@ -16,13 +25,4 @@ Uses the Pillow Python library.
 
 EXAMPLE: `detect_edge(Image.open('mcr_lead_singer.png'), 40)`
 
-## Reddit Sources (reddit_sources.py)
-
-
-It's universally known that [Redditors use reliable sources for their arguments](https://www.youtube.com/watch?v=r7l0Rq9E8MY&list=LL&index=3).
-
-This script scrapes the front page of a given subreddit and extracts external domain urls linked in comments and posts.
-Then it returns a dictionary of each domain and their count.
-
-EXAMPLE: `reddit_sources("worldnews")`
 
