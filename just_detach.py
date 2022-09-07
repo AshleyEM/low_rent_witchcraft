@@ -1,4 +1,4 @@
-# Completely detatches a selected mesh from an armature
+# Completely detaches a selected mesh from an armature
 import bpy
 
 obj = bpy.context.active_object # selected object
