@@ -2,9 +2,9 @@
 
 An assortment of convenience tools for Blender 3D.
 
-## just_detatch.py
+## just_detach.py
 
-Completely detatches a mesh from an armature without having to clear the parent, clear vertex groups, and then delete the armature modifier manually.
+Completely detaches a mesh from an armature without having to clear the parent, clear vertex groups, and then delete the armature modifier manually.
 
 More tools on the way...
 
