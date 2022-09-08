@@ -15,7 +15,7 @@ Generates a low-poly spiral of vertices with custom width, length, and tapering.
 
 # MISC
 
-## Edgy Pixels (edgy_pixels.py)
+## edgy_pixels.py
 ![](edgypixels.png)
 
 Given an image file, apply an **edge detection** filter or a **posterization** filter. 
