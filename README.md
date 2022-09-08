@@ -6,8 +6,11 @@ An assortment of convenience tools for Blender 3D.
 
 Completely detaches a mesh from an armature without having to clear the parent, clear vertex groups, and then delete the armature modifier manually.
 
-More tools on the way...
+## make_spiral.py
 
+![](spirals.png)
+
+Generates a low-poly spiral of vertices with custom width, length, and tapering.
 
 
 # MISC
