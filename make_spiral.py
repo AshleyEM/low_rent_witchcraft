@@ -2,9 +2,9 @@ import bpy
 import math
 import random
 
-# length=sprial length
-# width=sprial width
-# tapering=sprial tapers at the end
+# length=spiral length
+# width=spiral width
+# tapering=spiral tapers at the end
 def make_spiral(length, width, tapering=False):
     
     mesh = bpy.data.meshes.new('spiral') 
@@ -19,16 +19,19 @@ def make_spiral(length, width, tapering=False):
     taper = 1
     
     # generate vertices in a spiral
-    for i in range(1,length): 
-        z += 1
+    for i in range(1, length*width): 
+        
+        # go up, keep "resolution" consistent for different widths
+        z += 1/width 
+        
         if tapering:
-            x += width*math.cos(i)*taper
-            y += width*math.sin(i)*taper
-            if taper > 0.0:
-                taper -= 1/length # taper based on length
+            x += taper * math.cos(i/width)
+            y += taper * math.sin(i/width)
+            if taper > 0.0: # decrease taper at each new vertex
+                taper -= 1/(length * width) 
         else:
-            x += width*math.cos(i) 
-            y += width*math.sin(i)
+            x += math.cos(i/width)
+            y += math.sin(i/width)
             
         verts.append((x,y,z)) # place vertex
         edges.append((i-1, i)) # connect prev-->current vertices
@@ -38,7 +41,7 @@ def make_spiral(length, width, tapering=False):
 
     # add object to scene
     bpy.context.collection.objects.link(obj)
-    mesh.update(calc_edges=True) # idk what this does
+    mesh.update(calc_edges=True)
     
 
-make_spiral(40, 15, False) 
+make_spiral(40, 2, False)
