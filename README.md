@@ -8,9 +8,9 @@ Completely detaches a mesh from an armature without having to clear the parent, 
 
 ## make_spiral.py
 
-![](spirals.png)
+![](spiral_examples.png)
 
-Generates a low-poly spiral of vertices with custom width, length, and tapering.
+Generates a spiral of vertices with custom width, length, and tapering.
 
 
 # MISC
