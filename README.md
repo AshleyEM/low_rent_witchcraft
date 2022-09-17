@@ -12,7 +12,15 @@ Completely detaches a mesh from an armature without having to clear the parent, 
 
 Generates a spiral of vertices with custom width, length, and tapering.
 
-`make_spiral(length (int), width (int), tapering (True/False))`
+```
+# make_spiral(length, width, tapering)
+
+make_spiral(10, 40, True)
+make_spiral(23, 10, False)
+make_spiral(4, 2, False)
+make_spiral(8, 12, True)
+...
+```
 
 # MISC
 
@@ -27,6 +35,6 @@ Uses the Pillow Python library.
 
 **detect_edge(image file, threshold)**: create sketchy outlines based on the contrast between pixels
 
-EXAMPLE: `detect_edge(Image.open('mcr_lead_singer.png'), 40)`
+`detect_edge(Image.open('mcr_lead_singer.png'), 40)`
 
 
