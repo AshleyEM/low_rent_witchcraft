@@ -12,6 +12,7 @@ Completely detaches a mesh from an armature without having to clear the parent, 
 
 Generates a spiral of vertices with custom width, length, and tapering.
 
+`make_spiral(length (int), width (int), tapering (True/False))`
 
 # MISC
 
