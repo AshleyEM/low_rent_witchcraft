@@ -1,3 +1,16 @@
+## edgy_pixels.py
+![](edgypixels.png)
+
+Given an image file, apply an **edge detection** filter or a **posterization** filter. 
+Generates a new image, doesn't overwrite the original image file.
+Uses the Pillow Python library.
+
+**posterize(image file, threshold)**: reduce the brightness levels down to 2 values (black and white)
+
+**detect_edge(image file, threshold)**: create sketchy outlines based on the contrast between pixels
+
+`detect_edge(Image.open('mcr_lead_singer.png'), 40)`
+
 # BLENDER 3D TOOLS
 
 An assortment of convenience tools for Blender 3D.
@@ -21,20 +34,4 @@ make_spiral(4, 2, False)
 make_spiral(8, 12, True)
 ...
 ```
-
-# MISC
-
-## edgy_pixels.py
-![](edgypixels.png)
-
-Given an image file, apply an **edge detection** filter or a **posterization** filter. 
-Generates a new image, doesn't overwrite the original image file.
-Uses the Pillow Python library.
-
-**posterize(image file, threshold)**: reduce the brightness levels down to 2 values (black and white)
-
-**detect_edge(image file, threshold)**: create sketchy outlines based on the contrast between pixels
-
-`detect_edge(Image.open('mcr_lead_singer.png'), 40)`
-
 
